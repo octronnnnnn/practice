@@ -6,6 +6,26 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Method 1: Not idea bc clutters html with js. Can only set 1 "onclick" property per DOM element-->
+    <button onclick="alert('Hello World')">Click Me</button>
+
+    <!--Method 2: Moved the js to a separate js file-->
+    <button id="btn">Click Me</button>
+
+    <!--Method 3: js in js file-->
+    <button id="btnTwo">Click Me</button>
+
+    <!--Method3: Optimized-->
+    <button id="btnOptimized">Click Me</button>
+
+
+    <!--attaching listeners to groups of nodes-->
+    <div id="container">
+        <button id="1">CLICK ME</button>
+        <button id="2">CLICK ME</button>
+        <button id="3">CLICK ME</button>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
