@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fizz Buzz</title>
+    </head>
+    <body>
+        Problem: <br>
+        Write a program that takes a user's input and prints the numbers from one to the number the user entered. However, for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz.
+        <br>
+        <br>
+        Pseudo code: <br>
+        when a user inputs a number <br>
+        Loop from 1 to the entered number <br>
+        If the current number is divisible by 3 then print "Fizz" <br>
+        If the current number is divisible by 5 then print "Buzz" <br>
+        If the current number is divisible by 3 and 5 then print "FizzBuzz" <br>
+        Otherwise print the current number
+        <script>
+            // get user input
+            const answer = parseInt(prompt("Enter the number you would like to FizzBuzz up to: "));
+            // loop from 1 to entered number
+            for (let i = 1; i <= answer; i++)
+            {
+                // check first if number is divisible by 3 and 5 and print "FizzBuzz"
+                if (i % 3 == 0 && i % 5 == 0) {
+                    console.log("FizzBuzz");
+                }
+                // check if number is divisible by 3 and print "Fizz"
+                else if (i % 3 == 0) {
+                    console.log("Fizz");
+                }
+                // check if number si divisible by 5 and print "Buzz"
+                else if (i % 5 == 0 ) {
+                    console.log("Buzz");
+                }
+                // if not divisible by 3 or 5 print the number
+                else {
+                    console.log(i);
+                }
+            }
+        </script>
+    </body>
+</html>
