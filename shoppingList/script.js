@@ -7,7 +7,7 @@ const button = document.querySelector("button")
 function add () {
     //store current value of the input element
     const myItem = input.value;
-    //set input value to empty string
+    //set input value to empty string again
     input.value = "";
 
     //create 3 new variables for the listItem, listText and listButton
